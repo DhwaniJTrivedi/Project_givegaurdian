@@ -23,6 +23,7 @@ header {
   text-align: center;
   border-bottom: 1px solid #00c2cb;
 }
+
 header nav a {
   padding: 10px 20px;
   font-size: 2rem;
@@ -66,6 +67,34 @@ section:nth-child(5) {
 section .container {
   margin: 100px;
 }
+section .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section .text-container {
+  flex: 1;
+  padding: 20px;
+  min-width: 300px;
+}
+
+section .text-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+section .gif-container {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+section .gif-container img {
+  max-width: 100%;
+  height: auto;
+}
 section h1 {
   font-size: 3rem;
   margin: 20px;
@@ -74,9 +103,6 @@ section h2 {
   font-size: 40px;
   text-align: center;
   text-transform: uppercase;
-}
-section .text-container {
-  display: flex;
 }
 section .text-container .text-box {
   margin: 20px;
@@ -129,36 +155,71 @@ footer {
     font-size: 14px;
 }
 
-/* Media Query for Responsiveness */
 @media screen and (max-width: 768px) {
-    .footer-content {
+    /* Adjust the flex layout for stacking */
+    section .flex-container {
         flex-direction: column;
-        align-items: center;
     }
 
-    .footer-links {
-        margin-bottom: 20px;
+    section .text-container {
+        min-width: auto;
+    }
+
+    /* Adjust header styles */
+    header nav a {
+        font-size: 1.5rem;
+        padding: 5px 10px;
+    }
+    header {
+        padding: 10px;
+    }
+
+    /* Adjust h1 font size */
+    section h1 {
+        font-size: 2rem;
+    }
+
+    /* Adjust text-box padding */
+    section .text-container .text-box {
+        padding: 10px;
+    }
+    footer {
+      padding: 20px 0;
+  }
+  
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-links {
+      margin-bottom: 10px;
+      text-align: center;
+  }
+}
+
+/* For screens smaller than 900px */
+@media (max-width: 900px) {
+    section h1 {
+        font-size: 2rem;
         text-align: center;
     }
-}
-@media (max-width: 900px) {
-  section h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
-  section .text-container {
-    flex-direction: column;
-  }
+
+    /* Adjust flex layout for text-container */
+    section .text-container {
+        flex-direction: column;
+    }
 }
 
+/* Animation */
 .reveal {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 2s all ease;
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
 }
 
 .reveal.active {
-  transform: translateY(0);
-  opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
 }
