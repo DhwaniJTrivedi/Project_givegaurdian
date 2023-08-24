@@ -18,10 +18,10 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: #42455a;
+  background:lightpink;
   padding: 20px;
   text-align: center;
-  border-bottom: 1px solid #00c2cb;
+  border-bottom: 1px solid #3B9E9E;
 }
 .container {
 	height: 100vh;
@@ -60,7 +60,7 @@ header {
 	height: 100vh;
 	width: 50%;
 	z-index: 1;
-	background: aqua;
+	background: lightpink;
 	padding: 30px 20px;
 	line-height: 1rem;
 	display: flex;
@@ -111,13 +111,13 @@ header nav a {
 }
 header nav a:hover,
 header nav a.active {
-  background: #00c2cb;
+  background: #3B9E9E;
   color: #42455a;
   transition: 0.5s ease-out;
   letter-spacing: 2px;
 }
 body {
-  background: #42455a;
+  background:#4fbdbd;
 }
 section {
   min-height: 100vh;
@@ -185,7 +185,7 @@ section h2 {
 section .text-container .text-box {
   margin: 20px;
   padding: 20px;
-  background: #00c2cb;
+  background: #3B9E9E;
 }
 section .text-container .text-box h3 {
   font-size: 30px;
@@ -315,10 +315,6 @@ footer {
 } */
 
 
-@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
-
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
-
 .logo{
   
 }
@@ -327,7 +323,6 @@ footer {
   
   height:73px; 
   float:left;
-  background:url( https://s3.postimg.org/bqfooag4z/startific.jpg);
   background-repeat:no-repeat;
   width:250px;
   margin:0px;
@@ -425,6 +420,7 @@ transition:width .2s linear;
 -webkit-transform:translateZ(0) scale(1,1);
 box-shadow: 1px 0 15px rgba(0, 0, 0, 0.07);
   opacity:1;
+  
 }
 
 .main-menu>ul {
@@ -517,7 +513,6 @@ overflow:visible;
 
 
 .settings:hover, settings:focus {   
-  background:url( https://s17.postimg.org/74cl7s05b/logo_hover.jpg);
   -webkit-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
 -moz-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
 -o-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
@@ -525,7 +520,6 @@ transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
 }
 
 .settings:active, settings:focus {   
-  background:url( https://s3.postimg.org/bqfooag4z/startific.jpg);
   -webkit-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
 -moz-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
 -o-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
@@ -541,7 +535,7 @@ border-left:0px solid #F7F7F7;
 
 }
 
-nav {
+/* nav {
 -webkit-user-select:none;
 -moz-user-select:none;
 -ms-user-select:none;
@@ -555,7 +549,7 @@ outline:0;
 margin:0;
 padding:0;
 text-transform: uppercase;
-}
+} */
 
 
 
@@ -604,9 +598,4 @@ background: #e2e2e2;
 width: 100%;
 height: 100%;
 }
-@font-face {
-  font-family: 'Titillium Web';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
-}
+
