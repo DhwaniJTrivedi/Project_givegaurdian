@@ -61,10 +61,28 @@ body {font-family: "Lato", sans-serif}
 
 
     <div class="popup" id="popup">
-      <div class="popup-overlay" id="popup-overlay"></div>
+      <div class="popup-overlay" id="popup-overlay">
       <div class="main-popup">
+        
+        <!-- <div class="header">
+          <div class="logo-name">
+              <img class="logo" src="logo.png" alt="Logo">
+              <div class="name">Company Name</div>
+          </div>
+          <div class="icons">
+              <img class="settings-icon" src="settings-icon.png" alt="Settings">
+              <img class="profile-icon" src="profile-icon.png" alt="Profile">
+          </div>
+      </div> -->
+
         <div class="popup-content">
           <span class="close-btn" id="close-btn">&times;</span>
+          <div id="popup1">
+            <p>This is a popup!</p>
+            <p>Overlay uses <b>box-shadow</b>.</p>
+            <p>(Doesn't block elements on background)</p>
+            <a href="#" onclick="hide('popup1')">Ok!</a>
+          </div>
           <div id="popup-content-container">
             <div class="main-menu">
               <div class="settings"></div>
@@ -100,10 +118,50 @@ body {font-family: "Lato", sans-serif}
               </div>
               
             </div>
-            <h3>Little bit about us</h3>     
-               
           </div>
         </div>
+
+        <!-- <div class="popup-content">
+          <span class="close-btn" id="close-btn">&times;</span>
+          <div id="popup-content-container">
+            <h3>Little bit about us</h3>
+            <div class="main-menu">
+              <div class="settings"></div>
+              <div class="scrollbar" id="style-1">
+                <ul>
+                  <li>
+                    <a href="http://startific.com">
+                      <i class="fa fa-home fa-lg"></i>
+                      <span class="nav-text">Home</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://startific.com">
+                      <i class="fa fa-user fa-lg"></i>
+                      <span class="nav-text">Login</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://startific.com">
+                      <i class="fa fa-envelope-o fa-lg"></i>
+                      <span class="nav-text">Contact</span>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="logout">
+                  <li>
+                    <a href="http://startific.com">
+                      <i class="fa fa-lightbulb-o fa-lg"></i>
+                      <span class="nav-text">BLOG</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        
+      </div>
       </div>
     </div>
     <div class="container">

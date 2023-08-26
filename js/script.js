@@ -64,32 +64,4 @@ window.addEventListener('click', (e) => {
 		}, 500);
 	}
 });
-document.addEventListener("DOMContentLoaded", function () {
-  const openBtn = document.querySelector(".open-btn");
-  const popup = document.getElementById("popup");
-  const popupContentContainer = document.getElementById("popup-content-container");
-  const closeBtn = document.getElementById("close-btn");
-  
-  openBtn.addEventListener("click", function () {
-    // Fetch content from popup.html using AJAX or other methods
-    fetch("popup.html")
-      .then(response => response.text())
-      .then(content => {
-        popupContentContainer.innerHTML = content;
-        popup.style.display = "block";
-      })
-      .catch(error => console.error("Error fetching content:", error));
-  });
-  
-  closeBtn.addEventListener("click", function () {
-    popup.style.display = "none";
-  });
-  
-  // You can also close the popup if clicking outside of it
-  popup.addEventListener("click", function (event) {
-    if (event.target === popup) {
-      popup.style.display = "none";
-    }
-  });
-});
 
