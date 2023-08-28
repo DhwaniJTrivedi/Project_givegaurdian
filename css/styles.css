@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Asap", sans-serif;
   scroll-behavior: smooth;
+ 
 }
 a {
   text-decoration: none;
@@ -23,7 +23,112 @@ header {
   text-align: center;
   border-bottom: 1px solid #3B9E9E;
 }
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
 
+.logo-name {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+.image-container {
+  display: flex;
+  justify-content: center; /* Align images horizontally */
+  margin-top: 20px; /* Add spacing below the header */
+}
+
+/* Style for each individual image */
+.image {
+  margin: 0 10px; /* Adjust spacing between images */
+}
+
+.image img {
+  width: 30vh;
+  max-width: 100%; /* Make sure the images fit within the container */
+  height: auto;
+}
+
+.paragraph {
+  display: flex;
+  text-align: center;/* Add spacing between text views and paragraph */
+}
+
+.paragraph p {
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10vh;
+  margin-top: 20px;
+}
+.paragraph_learnmore{
+  
+  text-align: center;
+}
+.paragraph_learnmore p{
+  align-items: center;
+  justify-content: center;
+  margin-left: 10vh;
+  margin-top: 20px;
+}
+div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  margin-left: 10vh;
+  margin-top: 20px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+.centered-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px; /* Add spacing below the images */
+}
+
+.text-view {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.text-view p {
+  font-size: 16px;
+}
+
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+.settings-icon, .profile-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
 .logo-name {
   display: flex;
   align-items: center;
@@ -89,7 +194,6 @@ header {
 	width: 50%;
 	z-index: 1;
 	background: lightpink;
-	padding: 30px 20px;
 	line-height: 1rem;
 	display: flex;
 	justify-content: center;
@@ -104,9 +208,19 @@ header {
 	font-size: 2rem;
 	cursor: pointer;
 	transition: .5s ease all;
+  width: 40px;
+  height: 40px;
 }
 .close-btn:hover {
 	background: white;
+}
+.popup-content{
+  width: 100%;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  max-height: 80vh;
+  overflow-y: scroll;
 }
 .popup-content p {
 	font-size: 1.5rem;
@@ -287,6 +401,61 @@ footer {
     /* Adjust text-box padding */
     section .text-container .text-box {
         padding: 10px;
+    }
+    .header {
+      padding: 10px;
+    }
+    
+    .logo-name {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .name {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    
+    .image-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .image {
+      margin: 10px 0;
+    }
+    
+    .text-box {
+      padding: 10px;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .text-box input {
+      width: 100%;
+      margin: 10px 0;
+    }
+    .text-view p {
+      font-size: 14px;
+    }
+    .scroll-container {
+      gap: 5px;
+    }
+    
+    .scroll-container img {
+      /* Adjust the maximum width to fit the screen */
+      max-width: calc(50% - 5px);
+    }
+    .icons {
+      margin-top: 10px;
+    }
+    
+    .paragraph {
+      margin-top: 20px;
+    }
+    
+    .paragraph p {
+      font-size: 16px;
     }
     footer {
       padding: 20px 0;
