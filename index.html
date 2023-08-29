@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
-<title>Give Guardian</title>
-<meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8">
+    <title>Give Guardian</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
 <body>
     <header>
         
@@ -28,51 +31,38 @@ body {font-family: "Lato", sans-serif}
     <nav class="nav-wrapper">
       <ul class="nav">
         <li class="active">
-          <a href="#">Page 1</a>
+          <a href="#" class="white-link">Page 1</a>
         </li>
         <li>
-          <a href="#">Page 2</a>
+          <a href="#" class="white-link">Page 2</a>
         </li>
         <li>
-          <a href="#">Page 3</a>
+          <a href="#" class="white-link">Page 3</a>
         </li>
         <li>
-          <a href="#">Page 4</a>
+          <a href="#" class="white-link">Page 4</a>
         </li>
       </ul>
       <span class="nav-marker color-1"></span>
     </nav>
 
-    <!-- <div class="container"> -->
-      <!-- <div class="btn">
-        <button class="open-btn">Click Me</button>
-      </div> -->
-    <!-- <div class="popup">
-      <div class="popup-overlay"></div>
-      <div class="main-popup">
-        <div class="popup-content">
-          <span class="close-btn">&times;</span>
-          
-        </div>
-      </div>
-    </div> -->
-    <!-- </div> -->
 
     <div class="popup" id="popup">
       <div class="popup-overlay" id="popup-overlay">
         <div class="main-popup">
     
           <div class="popup-content">
-            <span class="close-btn" id="close-btn">&times;</span>
+            
             <div class="header">
               <div class="logo-name">
-                <img class="logo" src="images/logo_main.png" alt="Logo">
+                <img class="logo" src="images/Give_Guardian_LOGO_2000x2000.png" alt="Logo">
                 <div class="name">Give Guardian</div>
               </div>
               <div class="icons">
                 <img class="settings-icon" src="images/settings_icon.png" alt="Settings">
                 <img class="profile-icon" src="images/person_icon.png" alt="Profile">
               </div>
+              <span class="close-btn" id="close-btn">&times;</span>
             </div>
             <div id="popup-content-container">
               <div class="main-menu">
@@ -168,98 +158,50 @@ body {font-family: "Lato", sans-serif}
       </div>
     </div>
     
-<!-- 
-    <div class="popup" id="popup">
-      <div class="popup-overlay" id="popup-overlay">
-      <div class="main-popup">
-        
-        <div class="popup-content">
-          <span class="close-btn" id="close-btn">&times;</span>
-          
-
-          <div class="header">
-            <div class="logo-name">
-                <img class="logo" src="images/logo_main.png" alt="Logo">
-                <div class="name">Give Guardian</div>
-            </div>
-            
-        </div>
-        
-          <div id="popup-content-container">
-            <div class="main-menu">
-              <div class="settings"></div>
-              <div class="scrollbar" id="style-1">
-                <ul>
-                  <li>                                   
-                    <a href="http://startific.com">
-                      <i class="fa fa-home fa-lg"></i>
-                      <span class="nav-text">Home</span>
-                    </a>
-                  </li>
-                  <li>                                 
-                    <a href="http://startific.com">
-                      <i class="fa fa-user fa-lg"></i>
-                      <span class="nav-text">Login</span>
-                    </a>
-                  </li>
-                  <li>                                 
-                    <a href="http://startific.com">
-                      <i class="fa fa-envelope-o fa-lg"></i>
-                      <span class="nav-text">Contact</span>
-                    </a>
-                  </li>
-                </ul>
-                <ul class="logout">
-                  <li>
-                    <a href="http://startific.com">
-                      <i class="fa fa-lightbulb-o fa-lg"></i>
-                      <span class="nav-text">BLOG</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        <div class="icons">
-          <img class="settings-icon" src="images/settings_icon.png" alt="Settings">
-          <img class="profile-icon" src="images/person_icon.png" alt="Profile">
-      </div>
- 
-        
-      </div>
-      </div>
-    </div> -->
     <div class="container">
     <section id="home">
       <div class="container reveal">
-        <h1>Hello there...Welcome to Give Guardian &#8595;</h1>
+        <h1>Hello there...Welcome to Give Guardian</h1>
       </div>
       
-      <div class="btn">
+      <!-- <div class="btn"> -->
         <!-- <a href="popup.html" class="open-btn"><button>Go To Plugin</button></a> -->
-        <button class="open-btn">Click Me</button>
-      </div>
+        <!-- <button class="open-btn">Click Me</button> -->
+        <div class="wrapper">
+          <a class="link" href="#">
+            <div class="color"></div>
+            <span>Explore<i class="fa-solid fa-arrow-right"></i></span>
+            
+          </a>
+        </div>
+      <!-- </div> -->
     </section>
     </div>
     <section id="about">
       <div class="container reveal">
-          <h2>About</h2>
+          <h2>About Give Guardian</h2>
           <div class="flex-container">
               <div class="gif-container">
                   <img src="images/chrome_giphy.gif" alt="Giphy">
               </div>
               <div class="text-container">
                   <div class="text-box">
-                      <h3>Little bit about us</h3>
+                      <h3>Our Mission</h3>
                       <p>
-                          Empowering Trustworthy Giving for Lasting Impact
+                        Give Guardian is on a mission to revolutionize charitable giving by providing a secure and transparent platform that empowers donors to confidently support authorized and trustworthy charities. We are dedicated to ensuring that every donation makes a meaningful and lasting impact.
                       </p>
-                      <p>
+                      <!-- <p>
                           At Give Guardian, our mission is to revolutionize charitable giving by providing a secure platform that empowers users to confidently support authorized and trustworthy charities.
                           We are committed to ensuring that every donation makes a positive impact, backed by our pledge to guarantee refunds in case of unforeseen issues. By championing transparency, accountability, and the highest standards of credibility, we aim to create a community of compassionate donors who can change lives with complete confidence. Together, let's build a world where every act of kindness leads to lasting change.
-                      </p>
+                      </p> -->
+                  </div>
+                  <div class="text-box">
+                    <h3>Transparency and Accountability</h3>
+                    <p>We believe in transparency and accountability as the cornerstones of effective philanthropy. Our platform is designed to champion these values by offering in-depth information about each charity's mission, financial records, and impact. Donors can make well-informed decisions based on verified data.</p>
+                  </div>
+                  <div class="text-box">
+                    <h3>Guarantee of Impact</h3>
+                    <p>At Give Guardian, we stand behind the impact of every donation. We pledge to guarantee refunds in case of unforeseen issues, ensuring that donors have confidence in their giving. Our commitment to excellence extends to fostering a community of compassionate donors who together create lasting change.</p>
                   </div>
               </div>
           </div>
@@ -270,24 +212,21 @@ body {font-family: "Lato", sans-serif}
         <h2>Services</h2>
         <div class="text-container">
           <div class="text-box">
-            <h3>Section text</h3>
+            <h3>Trustworthy Charity Verification</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-              eius molestiae perferendis eos provident vitae iste.
+              Our plugin offers a comprehensive and reliable charity verification service to ensure that the donations made through our platform are directed towards legitimate and authorized charitable organizations. We meticulously verify the credentials and legal status of each charity to guarantee transparency and accountability.
             </p>
           </div>
           <div class="text-box">
-            <h3>Section Text</h3>
+            <h3>Real-Time Authentication</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-              eius molestiae perferendis eos provident vitae iste.
+              With our real-time authentication feature, donors can instantly verify the legitimacy of a charity before making a donation. We provide up-to-date information about the organization's registration, financial records, and mission, allowing donors to make informed giving decisions.
             </p>
           </div>
           <div class="text-box">
-            <h3>Section Text</h3>
+            <h3>Donor Peace of Mind</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-              eius molestiae perferendis eos provident vitae iste.
+              We prioritize donor peace of mind by offering a secure platform where they can confidently contribute to causes they care about. Our plugin's rigorous verification process minimizes the risk of fraudulent activities, ensuring that donations are utilized for their intended purpose and creating a lasting positive impact.
             </p>
           </div>
         </div>
@@ -296,21 +235,17 @@ body {font-family: "Lato", sans-serif}
   
     <section id="contact">
       <div class="container reveal">
-        <h2>Contact</h2>
+        <h2>Contact Us</h2>
         <div class="text-container">
           <div class="text-box">
-            <h3>Section Text</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h3>Reach Out to Us</h3>
+            <p>If you have any questions, suggestions, or feedback about Give Guardian, we would love to hear from you. Our team is dedicated to providing the best possible experience for our users. Feel free to contact us using the information provided below:</p>
           </div>
           <div class="text-box">
-            <h3>Section Text</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h3>Contact Information</h3>
+            <p><strong>Email:</strong> contact@giveguardian.com</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Address:</strong> 123 Charity Street, Cityville, Country</p>
           </div>
         </div>
       </div>
