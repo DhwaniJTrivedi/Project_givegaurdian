@@ -28,10 +28,10 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: #B2DFDB;
+  background: #009587;
   padding: 20px;
   text-align: center;
-  border-bottom: 1px solid #009587;
+  border-bottom: 1px solid #B2DFDB;
 }
 
 .header {
@@ -81,7 +81,6 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
 }
 
 /* Style for each individual image */
@@ -126,6 +125,7 @@ h3 {
 }
 
 .paragraph_learnmore p {
+  color: blue;
   align-items: center;
   justify-content: center;
   font-size: 1rem;
@@ -141,22 +141,21 @@ div.scroll-container {
   overflow: auto;
   white-space: nowrap;
   padding: 10px;
-  margin-left: 10vh;
+  margin-left: 8vh;
   margin-top: 20px;
 }
 
 div.scroll-container img {
   padding: 10px;
   max-width: 300px;
-  height: auto;
+  height: 250px;
+  width: 250px;
 }
 
 .centered-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 20px;
-  /* Add spacing below the images */
 }
 
 .text-view {
@@ -272,7 +271,7 @@ div.scroll-container img {
 }
 
 .close-btn:hover {
-  background: white;
+  background: #B2DFDB;
 }
 
 .container.reveal {
@@ -304,7 +303,7 @@ div.scroll-container img {
 
 .popup-content p {
   font-size: 1rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
 }
 .paragraph p{
   font-size: 1rem;
@@ -340,8 +339,8 @@ header nav a {
 
 header nav a:hover,
 header nav a.active {
-  background: #009587;
-  color: #42455a;
+  background: #B2DFDB;
+  color: #FFA500;
   transition: 0.5s ease-out;
   letter-spacing: 2px;
 }
@@ -434,15 +433,18 @@ section .text-container .text-box {
 }
 
 section .text-container .text-box h3 {
+  color: #FFA500;
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-
+section .text-container .text-box p {
+  color: #009587;
+}
 /* Footer Styles */
 footer {
-  background-color: #222;
+  background-color: #009587;
   color: #fff;
   padding: 40px 0;
 }
@@ -467,7 +469,7 @@ footer {
 }
 
 .footer-links a:hover {
-  color: #fff;
+  color: #FFA500;
 }
 
 .footer-bottom {
@@ -482,7 +484,6 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-  /* Adjust the flex layout for stacking */
   section .flex-container {
     flex-direction: column;
   }
@@ -497,7 +498,6 @@ footer {
     min-width: auto;
   }
 
-  /* Adjust header styles */
   header nav a {
     font-size: 1.5rem;
     padding: 5px 10px;
@@ -538,7 +538,7 @@ footer {
   .wrapper {
     display: block;
     text-align: center;
-    margin-bottom: 100px;
+    
   }
 
   .container h1 {
@@ -549,6 +549,7 @@ footer {
   .link {
     font-size: 1.5rem;
     margin-top: 15px;
+    margin-bottom: 200px;
   }
 
   .logo-name {
@@ -752,7 +753,7 @@ nav.main-menu.expanded {
 }
 
 .main-menu {
-  background: #F7F7F7;
+  background: #f2f2f2;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -789,7 +790,7 @@ nav.main-menu.expanded {
   display: table;
   border-collapse: collapse;
   border-spacing: 0;
-  color: #8a8a8a;
+  color: black;
   font-size: 13px;
   text-decoration: none;
   -webkit-transform: translateZ(0) scale(1, 1);
@@ -958,7 +959,7 @@ nav.main-menu li.active>a,
 :root {
   --white: #eee;
   --black: #141414;
-  --color: #3333ff;
+  --color: #009587;
   scroll-behavior: smooth;
 }
 
@@ -982,7 +983,7 @@ nav.main-menu li.active>a,
   display: block;
   font-size: 2rem;
   font-weight: bold;
-  color: white;
+  color: #FFA500;
   text-decoration: none;
   align-items: center;
   /* Vertically center content */
